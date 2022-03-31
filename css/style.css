@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html,body{
+    height: 100%;
+}
+
+
+/*divs gerais*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.clear{
+    clear:both;
+}
+
+
+/*divs especificas*/
+
+header{
+    background-color: #E9C438;
+    padding: 10px 2%;
+}
+
+
+.logo-belem1{
+    float: left;
+    width: 100px;
+    height: 80px;
+    border-radius: 50% 50%;
+    /*background-color: purple;*/
+    background-image: url(../images/logo-belem.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.logo-belem2{
+    float: right;
+    width: 100px;
+    height: 80px;
+    border-radius: 50% 50%;
+    /*background-color: green;*/
+    background-image: url(../images/logo-belem-panificadora.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+section.cover-form{
+    width: 100%;
+    padding: 0 2%;
+}
+
+
+.bg{
+    background-image: url(../images/imagem-belem-doces-embalagens.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+}
+
+
+.form-container{
+    float: right;
+    width: 400px;
+    margin-right: 40px;
+    height: 100%;
+    background-color: white;
+}
+
+
+.form-container h2{
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    background-color: #F240DA;
+}
+
+
+@media screen and (max-width: 510px) {
+    header{
+        text-align: center;
+    }
+
+    [class^="logo"]{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+    
+}
