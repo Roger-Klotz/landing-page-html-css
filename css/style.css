@@ -1,13 +1,16 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 
 
 html,body{
     height: 100%;
+    background-color: #B533DE;
 }
 
 
@@ -26,8 +29,8 @@ html,body{
 /*divs especificas*/
 
 header{
-    background-color: #E9C438;
-    padding: 10px 2%;
+    background-color:#EBC932;
+    padding: 10px 2% 30px 2%;
 }
 
 
@@ -73,18 +76,23 @@ section.cover-form{
 
 
 .form-container{
+    z-index: 2;
     float: right;
     width: 400px;
-    margin-right: 40px;
-    height: 100%;
-    background-color: white;
+    margin-right: 60px;
+    height: 110%;
+    position: relative;
+    top: -5%;
+    box-shadow: 1px 1px 2px 1px rgb(206, 199, 199);
+    background-color: #FFFFFF;
 }
 
 
 .form-container h2{
-    padding: 15px;
+    font-weight: bold;
+    padding: 25px 15px;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     background-color: #F240DA;
 }
 
@@ -121,9 +129,44 @@ section.cover-form{
 
 
 .form-container form input[type=submit]{
-    background-color: ;
+    background-color: #31CDDC;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
 }
 
+
+section.chamada{
+    z-index: 1;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    /*display: inline-block;*/
+    /*background-color: #FFFFFF;*/
+}
+
+
+section.chamada .container{
+    padding: 40px 0;
+    margin: 0 -10% 0 5%;
+    background-color: #FFFFFF;
+}
+
+
+section.chamada h2{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: #F04BD6;
+    font-size: 24px;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 510px) {
     header{
