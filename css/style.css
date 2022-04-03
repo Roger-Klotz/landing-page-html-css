@@ -7,8 +7,13 @@
 }
 
 
+html{
+    height: 100%;
+}
 
-html,body{
+
+
+body{
     height: 100%;
     background-color: #B533DE;
 }
@@ -67,22 +72,25 @@ section.cover-form{
 
 
 .bg{
+    position: relative;
     background-image: url(../images/imagem-belem-doces-embalagens.jpg);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 560px;
 
 }
 
 
 .form-container{
-    z-index: 2;
-    float: right;
+    position: absolute;
+    right: 30px;
+    /*z-index: 2;*/
+    /*float: right;*/
     width: 400px;
-    margin-right: 60px;
-    height: 110%;
-    position: relative;
-    top: -5%;
+    /*margin-right: 60px;*/
+    height: 105%;
+    /*position: relative;*/
+    top: -2.5%;
     box-shadow: 1px 1px 2px 1px rgb(206, 199, 199);
     background-color: #FFFFFF;
 }
@@ -98,7 +106,7 @@ section.cover-form{
 
 
 .form-container form{
-    margin-top: 8px;
+    margin-top: 20px;
     padding: 15px;
 }
 
@@ -142,20 +150,19 @@ section.cover-form{
 
 section.chamada{
     z-index: 1;
-    padding: 50px 0;
+    /*padding: 50px 0;*/
     width: 100%;
     text-align: center;
-    position: relative;
-    top: -50px;
+    /*position: relative;*/
+    /*top: -50px;*/
     /*display: inline-block;*/
     /*background-color: #FFFFFF;*/
 }
 
 
 section.chamada .container{
-    padding: 40px 0;
-    margin: 0 -10% 0 5%;
-    background-color: #FFFFFF;
+    padding: 70px 0 50px 0;
+    background-color: yellow;
 }
 
 
@@ -165,7 +172,19 @@ section.chamada h2{
     display: inline-block;
     color: #F04BD6;
     font-size: 24px;
+    text-transform: uppercase;
     font-weight: bold;
+}
+
+
+section.chamada p{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: red;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 @media screen and (max-width: 510px) {
