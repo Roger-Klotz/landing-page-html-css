@@ -221,8 +221,13 @@ footer .container{
 }
 
 footer img{
-	width: 90px;
+	width: 50px;
     border-radius: 50% 50%;
+}
+
+
+footer p{
+    margin-top: 2px;
 }
 
 
