@@ -22,7 +22,7 @@ body{
 /*divs gerais*/
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -85,12 +85,14 @@ section.cover-form{
 .form-container{
     position: absolute;
     right: 30px;
-    /*z-index: 2;*/
+    z-index: 2;
     /*float: right;*/
     width: 400px;
     /*margin-right: 60px;*/
     height: 105%;
     /*position: relative;*/
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(117,117,117,1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(117,117,117,1);
     top: -2.5%;
     box-shadow: 1px 1px 2px 1px rgb(206, 199, 199);
     background-color: #FFFFFF;
@@ -154,7 +156,7 @@ section.chamada{
     /*padding: 50px 0;*/
     width: 100%;
     text-align: center;
-    /*position: relative;*/
+    position: relative;
     /*top: -50px;*/
     /*display: inline-block;*/
     /*background-color: #FFFFFF;*/
@@ -163,7 +165,7 @@ section.chamada{
 
 section.chamada .container{
     padding: 70px 0 50px 0;
-    background-color: yellow;
+    background-color: #EBC932;
 }
 
 
@@ -189,6 +191,41 @@ section.chamada p{
 }
 
 
+.flex-mosaico{
+	display: flex;
+}
+
+.first-mosaic-item{
+    /*background-image: url(../images/forma-de-pãp-de-queijo.png);*/
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+
+.second-mosaic-item{
+	background-color: #B533DE;
+	padding:90px 40px;
+	width: 40%;
+}
+
+.second-mosaic-item p{
+	color: white;
+    font-weight: bold;
+}
+
+
+footer .container{
+	text-align: center;
+	padding: 8px; 0;
+	background-color:#EBC932;
+}
+
+footer img{
+	width: 90px;
+    border-radius: 50% 50%;
+}
+
+
 @media screen and (max-width: 960px){
 
 	.bg{
@@ -206,15 +243,53 @@ section.chamada p{
 	}
 }
 
-@media screen and (max-width: 510px) {
-    header{
-        text-align: center;
-    }
 
-    [class^="logo"]{
-        margin-top: 10px;
-        display: inline-block;
-        float: none;
-    }
+
+@media screen and (max-width: 1024px){
+
+	.bg{
+		height: auto;
+		padding: 80px 0;
+		text-align: center;
+	}
+
+	.form-container{
+		text-align: left;
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.flex-mosaico{
+		display: block;
+	}
+
+	.first-mosaic-item{
+		padding-top:80%;
+		width: 100%;
+	}
+
+	.second-mosaic-item{
+		text-align: justify;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 510px){
+
+	header{
+		text-align: center;
+	}
+
+	[class^="logo"]{
+		margin-top:10px;
+		display: inline-block;
+		float: none;
+	}
     
 }
